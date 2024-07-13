@@ -1,12 +1,8 @@
 using DG.Tweening;
 using UnityEngine;
 
-public class RotateObject : MonoBehaviour
+public class RotateObject : ActingObject
 {
-    [SerializeField] private float _duration;
-    [SerializeField] private int _loopCount;
-    [SerializeField] private LoopType _loopType;
-
     private void Start()
     {
         Vector3 target = new Vector3(0,360,0);

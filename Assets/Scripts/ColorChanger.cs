@@ -3,12 +3,8 @@ using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
 
-public class ColorChanger : MonoBehaviour
+public class ColorChanger : ActingObject
 {
-    [SerializeField] private float _duration;
-    [SerializeField] private int _loopCount;
-    [SerializeField] private LoopType _loopType;
-
     private SpriteRenderer _spriteRenderer;
 
     private void Start()
